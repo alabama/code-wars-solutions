@@ -1,17 +1,17 @@
 defmodule NestedString do
   @moduledoc false
   @allowed_codepoints ["(", ")", "{", "}", "[", "]"]
-  def is_properly_nested(is_properly_nested) when not is_binary(is_properly_nested), do: false
-  def is_properly_nested(is_properly_nested) when rem(byte_size(is_properly_nested), 2) !== 0, do: false
-  def is_properly_nested(is_properly_nested) when byte_size(is_properly_nested) <= 0, do: true
-  def is_properly_nested(is_properly_nested) do
+  def is_properly_nested(string) when not is_binary(string), do: false
+  def is_properly_nested(string) when rem(byte_size(string), 2) !== 0, do: false
+  def is_properly_nested(string) when byte_size(string) <= 0, do: true
+  def is_properly_nested(string) do
     help_map = %{
       ")" => "(",
       "}" => "{",
       "]" => "["
     }
     # we first split the given string to it's codepoints
-    String.codepoints(is_properly_nested)
+    String.codepoints(string)
     |> Enum.reduce_while(Stack.new, fn codepoint, stack ->
       if !Enum.member?(@allowed_codepoints, codepoint), do: raise("'#{inspect(codepoint)}' is not allowed in the given string, only '#{inspect(@allowed_codepoints)}'")
       # we check if the current codepoint is a closing bracket

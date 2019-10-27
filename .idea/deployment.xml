@@ -23,6 +23,7 @@
           </mappings>
           <excludedPaths>
             <excludedPath path="/var/www/nested-string-problem/_build" />
+            <excludedPath path="/var/www/nested-string-problem/frontend/node_modules" />
           </excludedPaths>
         </serverdata>
       </paths>

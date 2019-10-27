@@ -20,5 +20,5 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-properly_nested_string_problem-*.tar
+properly_nested-*.tar
 
