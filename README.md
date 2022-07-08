@@ -1,4 +1,3 @@
-```
 ## Run it
 
 `cd` into the project root, compile and call the Elixir's interactive shell. 
