@@ -8,7 +8,7 @@ iex -S mix
 ```
 ```elixir
 AllPossibleSubsequences.subsequence("abcdefg")
-TwiceLinear.dbl_linear("({[]})")
+TwiceLinear.dbl_linear(10)
 ```
 
 ## Test it
