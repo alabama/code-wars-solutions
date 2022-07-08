@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="thrift" type="mix">
-    <CLASSES />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/deps/thrift/lib" />
-      <root url="file://$PROJECT_DIR$/deps/thrift/src" />
-    </SOURCES>
-  </library>
-</component>

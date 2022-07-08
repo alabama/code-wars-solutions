@@ -1,5 +1,5 @@
 
 use Mix.Config
 
-config :properly_nested,
+config :code_wars,
        port: 9090
