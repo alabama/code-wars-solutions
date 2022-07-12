@@ -16,7 +16,7 @@ defmodule NestedStringProblem.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {CodeWarsSolution.Application, []}
+      mod: {CodingProblemsSolutions.Application, []}
     ]
   end
 

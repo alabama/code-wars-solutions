@@ -1,4 +1,4 @@
-defmodule CodeWarsSolution.Application do
+defmodule CodingProblemsSolutions.Application do
   @moduledoc false
 
   use Application
@@ -9,14 +9,14 @@ defmodule CodeWarsSolution.Application do
 #    children = [
 #    ]
 
-    opts = [strategy: :one_for_one, name: CodeWarsSolution.Supervisor]
+    opts = [strategy: :one_for_one, name: CodingProblemsSolutions.Supervisor]
     Supervisor.start_link([], opts)
   end
 
 #  defp server_child_spec(_port) do
 #    %{
 #      id: Server,
-#      start: {Server, :start_link, [CodeWarsSolution.ServiceHandler, port]},
+#      start: {Server, :start_link, [CodingProblemsSolutions.ServiceHandler, port]},
 #      type: :supervisor
 #    }
 #  end
