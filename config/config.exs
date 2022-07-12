@@ -1,5 +1,5 @@
 
 use Mix.Config
 
-config :code_wars,
+config :coding_problems_solutions,
        port: 9090

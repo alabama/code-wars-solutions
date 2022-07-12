@@ -4,7 +4,7 @@ defmodule CodingProblemsSolutions.Application do
   use Application
 
   def start(_type, _args) do
-#    port = Application.get_env(:code_wars, :port, 9090)
+#    port = Application.get_env(:coding_problems_solutions, :port, 9090)
 
 #    children = [
 #    ]
