@@ -3,7 +3,7 @@ defmodule NestedStringProblem.MixProject do
 
   def project do
     [
-      app: :code_wars,
+      app: :coding_problems_solutions,
       version: "0.1.0",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
@@ -16,7 +16,7 @@ defmodule NestedStringProblem.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {CodeWarsSolution.Application, []}
+      mod: {CodingProblemsSolutions.Application, []}
     ]
   end
 
