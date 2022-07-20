@@ -4,6 +4,7 @@
 ```bash
 mix compile
 iex -S mix
+### windows: iex.bat --werl -S mix
 ```
 ```elixir
 AllPossibleSubsequences.subsequence("abcdefg")
